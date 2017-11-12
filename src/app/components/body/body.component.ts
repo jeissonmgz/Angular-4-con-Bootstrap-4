@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  mostrarLogo:boolean = true;
-  paginas:any = [
+  mostrarLogo: boolean = true;
+  paginas: Pagina[] = [
     {
       titulo: "Tour of Heroes",
       link: "https://angular.io/tutorial"
@@ -28,4 +28,9 @@ export class BodyComponent implements OnInit {
   ngOnInit() {
   }
 
+}
+
+interface Pagina {
+  titulo: string,
+  link
 }
