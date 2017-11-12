@@ -1,27 +1,23 @@
 # EstructuraPagina
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+Este proyecto se genero con [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
+## Cargar Bootstrap
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Package necesarios
+* npm install bootstrap@4.0.0-beta.2 --save
+* npm install jquery --save
+* snpm install popper.js --save
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Configurar Angular CLI
+Abrir el fichero .angular-cli.json y dentro de las configuraciones de "apps" realizar los siguientes cambios:
+1. Agregar el siguiente estilo en el array styles
+* `"../node_modules/bootstrap/dist/css/bootstrap.min.css"`
+2. Agregar los siguientes scripts en el array scripts
+* `"../node_modules/jquery/dist/jquery.slim.min.js"`
+* `"../node_modules/popper.js/dist/umd/popper.js"`
+* `"../node_modules/bootstrap/dist/js/bootstrap.min.js"`
